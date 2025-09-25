@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laundry Services</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+    }
+
+    /* Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    nav .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #0077b6;
+    }
+
+    nav .username {
+      background: #e0f0ff;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: bold;
+      color: #0077b6;
+    }
+
+    nav .username a{
+      text-decoration: none;
+    }
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 10%;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .hero-text h1 span {
+      color: #0077b6;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+      margin-bottom: 25px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      background: #0077b6;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+
+    }
+
+    .btn:hover {
+      background: #005f8d;
+    }
+
+    .hero-img img {
+      width: 350px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        text-decoration: none;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        max-width: 100%;
+      }
+
+      .hero-img img {
+        width: 80%;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <!--div class="logo">Logo</div-->
+    <div class="logo"> <img src="https://www.karrieretag.org/wp-content/uploads/2023/10/rkg-rheinische-kraftwagen-logo-1.png"
+       alt="company logo" 
+       height="80" 
+       width="50">
+    </div>
+
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <!--div class="username">username</div-->
+    <div class="username" ><a href="#">username</a></div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Revitalize Your <br>
+        Clothes with Expert <br>
+        <span> Laundry Services!</span>
+      </h1>
+      <p>From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a pickup and rediscover the freshness of your clothes today!</p>
+      <button class="btn">Book a service today!</button>
+    </div>
+    <div class="hero-img">
+      <img src="https://thumbs.dreamstime.com/z/realistic-washing-machine-fresh-clean-folded-clothing-laundry-basket-dirty-cloth-modern-laundromat-d-laundry-washing-154391010.jpg?ct=jpeg" alt="Laundry Service">
+    </div>
+  </section>
+
+</body>
+</html>
